@@ -6,9 +6,25 @@ namespace Composer\Autoload;
 
 class ComposerStaticInit40796081aa58e2f4dc36b6d0582f4c7f
 {
+    public static $prefixLengthsPsr4 = array (
+        'p' => 
+        array (
+            'phpreaddocxmath\\' => 16,
+        ),
+    );
+
+    public static $prefixDirsPsr4 = array (
+        'phpreaddocxmath\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/phpreaddocxmath',
+        ),
+    );
+
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
+            $loader->prefixLengthsPsr4 = ComposerStaticInit40796081aa58e2f4dc36b6d0582f4c7f::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit40796081aa58e2f4dc36b6d0582f4c7f::$prefixDirsPsr4;
 
         }, null, ClassLoader::class);
     }
