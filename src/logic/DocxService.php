@@ -2,8 +2,6 @@
 
 namespace PHPReadDocx\src\logic;
 
-use function Couchbase\defaultDecoder;
-
 /**
  * Class DocxService
  * @package PHPReadDocx\src\logic
