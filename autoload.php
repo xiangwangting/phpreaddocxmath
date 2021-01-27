@@ -5,7 +5,6 @@
  */
 function classLoader($class)
 {
-    date_default_timezone_set('Asia/Shanghai');
     $path = str_replace('\\', DIRECTORY_SEPARATOR, $class);
     $path = explode('/',$path);
     unset($path[0]);

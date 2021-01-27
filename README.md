@@ -23,7 +23,7 @@ http://www.wiris.com/en/plugins3/tinymce/download
 
 #### 使用说明
 
-1.  php7.4以上版本
+1.  php7.0以上版本
 2.  需要php拓展  XSL extension
 文档 https://www.php.net/manual/zh/class.xsltprocessor.php
 

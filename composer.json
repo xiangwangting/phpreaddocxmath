@@ -1,5 +1,5 @@
 {
-    "name": "phpreaddocx/phpreaddocx",
+    "name": "phpreadocxmath/phpreadocxmath",
     "description": "php read docx include math",
     "type": "library",
     "require": {
