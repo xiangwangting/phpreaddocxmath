@@ -1,6 +1,6 @@
 <?php
 
-use PHPReadDocx\src\ImageDiyHandelInterface;
+use phpreaddocxmath\src\ImageDiyHandelInterface;
 
 /**
  * demo自定义图片处理

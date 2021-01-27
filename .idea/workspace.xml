@@ -3,14 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="10f6411e-c9c7-4052-ac54-959f9d3a0368" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ExtractConfig.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/ExtractConfig.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ImageDiyHandelInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/ImageDiyHandelInterface.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ReadDocxService.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/ReadDocxService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logic/DocxService.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/logic/DocxService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logic/Extract/ImgExtract.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/logic/Extract/ImgExtract.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logic/Extract/MathExtract.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/logic/Extract/MathExtract.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logic/Extract/SubExtract.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/logic/Extract/SubExtract.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logic/Extract/SupExtract.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/logic/Extract/SupExtract.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logic/ExtractAbstruct.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/logic/ExtractAbstruct.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Demo.php" beforeDir="false" afterPath="$PROJECT_DIR$/test/Demo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/ImageDiyHandelDemo.php" beforeDir="false" afterPath="$PROJECT_DIR$/test/ImageDiyHandelDemo.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +45,7 @@
       <updated>1611713862563</updated>
       <workItem from="1611713863676" duration="367000" />
       <workItem from="1611714930146" duration="24000" />
-      <workItem from="1611714969992" duration="84000" />
+      <workItem from="1611714969992" duration="182000" />
     </task>
     <servers />
   </component>

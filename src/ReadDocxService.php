@@ -3,10 +3,11 @@
 namespace phpreaddocxmath\src;
 
 
-use PHPReadDocx\src\logic\DocxService;
-use PHPReadDocx\src\logic\Extract\ImgExtract;
-use PHPReadDocx\src\logic\Extract\MathExtract;
-use PHPReadDocx\src\logic\ExtractAbstruct;
+use phpreaddocxmath\src\ImageDiyHandelInterface;
+use phpreaddocxmath\src\logic\DocxService;
+use phpreaddocxmath\src\logic\Extract\ImgExtract;
+use phpreaddocxmath\src\logic\Extract\MathExtract;
+use phpreaddocxmath\src\logic\ExtractAbstruct;
 
 /**
  * 读取dock服务

@@ -1,7 +1,7 @@
 <?php
 
 
-namespace PHPReadDocx\src;
+namespace phpreaddocxmath\src;
 
 
 /**
