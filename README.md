@@ -21,6 +21,8 @@ http://www.wiris.com/en/plugins3/tinymce/download
    cd phpreadocxmath/test \
    php Demo.php
 
+2、composer require phpreaddocxmath/phpreaddocxmath
+
 #### 使用说明
 
 1.  php7.0以上版本
