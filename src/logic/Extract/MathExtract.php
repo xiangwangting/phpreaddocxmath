@@ -1,11 +1,11 @@
 <?php
 
 
-namespace PHPReadDocx\src\logic\Extract;
+namespace phpreaddocxmath\src\logic\Extract;
 
 
-use PHPReadDocx\src\logic\DocxService;
-use PHPReadDocx\src\logic\ExtractAbstruct;
+use phpreaddocxmath\src\logic\DocxService;
+use phpreaddocxmath\src\logic\ExtractAbstruct;
 
 /**
  * Class MathExtract 公式转换

@@ -1,7 +1,7 @@
 <?php
 
 
-namespace PHPReadDocx\src\logic;
+namespace phpreaddocxmath\src\logic;
 
 
 /**

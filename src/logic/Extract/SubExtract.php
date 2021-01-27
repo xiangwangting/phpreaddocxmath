@@ -1,10 +1,10 @@
 <?php
 
 
-namespace PHPReadDocx\src\logic\Extract;
+namespace phpreaddocxmath\src\logic\Extract;
 
 
-use PHPReadDocx\src\logic\ExtractAbstruct;
+use phpreaddocxmath\src\logic\ExtractAbstruct;
 
 /**
  * Class PopExtract 下标转换
