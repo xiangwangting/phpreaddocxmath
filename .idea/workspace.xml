@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="10f6411e-c9c7-4052-ac54-959f9d3a0368" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/phpreadocxmath.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/phpreadocxmath.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +32,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -55,5 +56,9 @@
       <screen x="-1920" y="25" width="1920" height="1055" />
     </state>
     <state x="-1176" y="433" key="#com.jetbrains.php.refactoring.move.namespace.PhpMoveNamespaceDialog#/-1920.25.1920.1055/0.25.1440.875@-1920.25.1920.1055" timestamp="1611714039788" />
+    <state x="-1451" y="188" key="SettingsEditor" timestamp="1611731369645">
+      <screen x="-1920" y="25" width="1920" height="1055" />
+    </state>
+    <state x="-1451" y="188" key="SettingsEditor/-1920.25.1920.1055/0.25.1440.875@-1920.25.1920.1055" timestamp="1611731369645" />
   </component>
 </project>
