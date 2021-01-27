@@ -17,11 +17,10 @@ http://www.wiris.com/en/plugins3/tinymce/download
 
 #### 安装教程
 
-1.  git clone下来可以直接用cli运行demo    
+1. git clone下来可以直接用cli运行demo    
    cd phpreadocxmath/test \
    php Demo.php
-
-2、composer require phpreaddocxmath/phpreaddocxmath
+ 2. composer require phpreaddocxmath/phpreaddocxmath
 
 #### 使用说明
 
