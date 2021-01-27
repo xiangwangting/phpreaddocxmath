@@ -39,7 +39,8 @@ class ReadDocxService
     /**
      * ReadDocxService constructor.
      */
-    public function __construct(){
+    public function __construct()
+    {
         $this->docxService = new DocxService();
     }
 
@@ -51,8 +52,8 @@ class ReadDocxService
     public function setFileUrl($file_url)
     {
         $this->file_url = trim($file_url);
-        if(!@fopen($this->file_url, 'r')) {
-            throw new \Exception('file is not exists:'.$file_url);
+        if (!@fopen($this->file_url, 'r')) {
+            throw new \Exception('file is not exists:' . $file_url);
         }
         $this->docxService->readFile($file_url);
         return $this;
@@ -70,17 +71,17 @@ class ReadDocxService
             throw new \Exception('file_url is required');
         }
         $this->docxService->load();
-        foreach ($this->docxService->docx_data_arr as $xml){
-             $this->docx_arr []= '<div>'.$this->getHtmlString($xml).'</div>';
+        foreach ($this->docxService->docx_data_arr as $xml) {
+            $this->docx_arr [] = '<div>' . $this->getHtmlString($xml) . '</div>';
         }
         $this->docxService->delTempFile();
         if ($filename) {
             $docx = '';
-            foreach ($this->docx_arr as $docx_string){
+            foreach ($this->docx_arr as $docx_string) {
                 $docx .= $docx_string;
             }
-            $filename = str_replace('.html','',$filename);
-            $html = '
+            $filename = str_replace('.html', '', $filename);
+            $html     = '
                         <html>
                         <head>
                             <title></title>
@@ -92,7 +93,7 @@ class ReadDocxService
                         </body>
                         </html>
                     ';
-            $filename = $filename.'.html';
+            $filename = $filename . '.html';
             $myfile   = fopen($filename, 'w');
             fwrite($myfile, $html);
             fclose($myfile);
@@ -105,31 +106,31 @@ class ReadDocxService
      * @param $xml
      * @return mixed
      */
-    private function getHtmlString($xml){
+    private function getHtmlString($xml)
+    {
         $math = '';
-        /**@var ExtractAbstruct $class*/
-        foreach (ExtractConfig::CONFIG as $class){
-            $class = new $class($xml,$this->docxService);
-            if($class instanceof MathExtract){
+        /**@var ExtractAbstruct $class */
+        foreach (ExtractConfig::CONFIG as $class) {
+            $class = new $class($xml, $this->docxService);
+            if ($class instanceof MathExtract) {
                 $math = $class;
             }
-            if($class instanceof ImgExtract){
+            if ($class instanceof ImgExtract) {
                 $xml = $class->handel($this->img_handel_class);
-            }else{
+            } else {
                 $xml = $class->handel();
             }
-
         }
         $xml = trim(strip_tags($xml));
-        /**@var ExtractAbstruct $class*/
-        foreach (ExtractConfig::CONFIG as $class){
-            $class = new $class($xml,$this->docxService);
-            $xml = $class->handelOver($xml);
+        /**@var ExtractAbstruct $class */
+        foreach (ExtractConfig::CONFIG as $class) {
+            $class = new $class($xml, $this->docxService);
+            $xml   = $class->handelOver($xml);
         }
-        if($math instanceof  MathExtract){
+        if ($math instanceof MathExtract) {
             $xml = $math->handelOverDiy($xml);
         }
-        return $xml;
+        return trim($xml);
     }
 
     /**
@@ -137,13 +138,14 @@ class ReadDocxService
      * @param string $class
      * @return $this
      */
-    public function setImgHandelClass($class_name = ''){
-        if(!$class_name){
+    public function setImgHandelClass($class_name = '')
+    {
+        if (!$class_name) {
             return $this;
         }
         $class = new $class_name();
-        if(!$class instanceof ImageDiyHandelInterface){
-            throw new \Exception($class_name.' required ImageDiyHandelInterface');
+        if (!$class instanceof ImageDiyHandelInterface) {
+            throw new \Exception($class_name . ' required ImageDiyHandelInterface');
         }
         $this->img_handel_class = $class;
         return $this;
