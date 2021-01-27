@@ -8,12 +8,15 @@ namespace phpreaddocxmath\src\logic;
  */
 class DocxService
 {
-
     /**
-     * 临时文件路径
+     * @var string
+     */
+    private $diy_tmp_patch;
+    /**
+     * 临时文件夹名字
      * @var
      */
-    private $temp_patch;
+    private $temp_patch_name;
     /**
      * @var
      */
@@ -41,9 +44,11 @@ class DocxService
 
     /**
      * DocxService constructor.
+     * @param string $diy_tmp_patch
      */
-    public function __construct()
+    public function __construct($diy_tmp_patch = 'tmp')
     {
+        $this->diy_tmp_patch = $diy_tmp_patch;
         $this->docx = new \ZipArchive();
     }
 
@@ -58,9 +63,9 @@ class DocxService
     /**
      * @return mixed
      */
-    public function getTempPatch()
+    public function getTempPatchName()
     {
-        return $this->temp_patch;
+        return $this->temp_patch_name;
     }
 
     /**
@@ -72,17 +77,24 @@ class DocxService
     }
 
     /**
+     * @return string
+     */
+    public function getDiyTmpPatch(){
+        return $this->diy_tmp_patch;
+    }
+
+    /**
      * @param $file_url
      * @throws \Exception
      */
     public function readFile($file_url)
     {
-        $temp_file        = file_get_contents($file_url);
-        $this->temp_patch = md5($temp_file);
-        if (!is_dir('../temp/' . $this->temp_patch)) {
-            mkdir('../temp/' . $this->temp_patch);//创建临时文件夹
+        $temp_file             = file_get_contents($file_url);
+        $this->temp_patch_name = md5($temp_file);
+        if (!is_dir($this->diy_tmp_patch.'/' . $this->temp_patch_name)) {
+            mkdir($this->diy_tmp_patch.'/' . $this->temp_patch_name);//创建临时文件夹
         }
-        $tmp_file_name = '../temp/' . $this->temp_patch . '/' . $this->temp_patch . '.docx';
+        $tmp_file_name = $this->diy_tmp_patch.'/' . $this->temp_patch_name . '/' . $this->temp_patch_name . '.docx';
         $myfile        = fopen($tmp_file_name, 'w');
         fwrite($myfile, $temp_file);
         fclose($myfile);
@@ -90,7 +102,7 @@ class DocxService
         $ret        = $this->docx->open($tmp_file_name);
         if ($ret === true) {
             $this->document = $this->docx->getFromName('word/document.xml');
-            $url            = '../temp/' . $this->temp_patch . '/media';
+            $url            = $this->diy_tmp_patch.'/' . $this->temp_patch_name . '/media';
             for ($i = 0; $i < $this->docx->numFiles; $i++) {
                 $f = $this->docx->getNameIndex($i);
                 if (stripos($f, 'word/media/') !== false) {
@@ -139,7 +151,7 @@ class DocxService
      */
     public function delTempFile()
     {
-        $this->rm_dir('../temp/' . $this->temp_patch);
+        $this->rm_dir($this->diy_tmp_patch.'/' . $this->temp_patch_name);
     }
 
     /**

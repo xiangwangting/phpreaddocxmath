@@ -56,7 +56,7 @@ class ImgExtract extends ExtractAbstruct
             $str = '#<Relationship[^>]*Id="' . $match[0] . '"[^>]*>#';
             preg_match($str, $picdata, $st);
             preg_match('#media/image\d+.(png|jpg|jpeg|wmf)#', $st[0], $t);
-            $img_patch = '../temp/' . $this->docxService->getTempPatch() . '/media/word/' . $t[0];
+            $img_patch = $this->docxService->getDiyTmpPatch().'/' . $this->docxService->getTempPatchName() . '/media/word/' . $t[0];
             //这里获取到了图片到base64encode数据,需要上传到oss,并把本地地址替换成oss地址
             $base64    = $this->base64EncodeImage($img_patch);
             $oss_url   = $this->saveOss($base64);

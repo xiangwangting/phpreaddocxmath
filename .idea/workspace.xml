@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="10f6411e-c9c7-4052-ac54-959f9d3a0368" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/phpreadocxmath.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/phpreadocxmath.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ReadDocxService.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/ReadDocxService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/logic/DocxService.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/logic/DocxService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/logic/Extract/ImgExtract.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/logic/Extract/ImgExtract.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Demo.php" beforeDir="false" afterPath="$PROJECT_DIR$/test/Demo.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +54,14 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="-1147" y="272" key="#com.intellij.ide.util.MemberChooser" timestamp="1611735715759">
+      <screen x="-1920" y="25" width="1920" height="1055" />
+    </state>
+    <state x="-1147" y="272" key="#com.intellij.ide.util.MemberChooser/-1920.25.1920.1055/0.25.1440.875@-1920.25.1920.1055" timestamp="1611735715759" />
+    <state x="-1363" y="25" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1611735237780">
+      <screen x="-1920" y="25" width="1920" height="1055" />
+    </state>
+    <state x="-1363" y="25" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/-1920.25.1920.1055/0.25.1440.875@-1920.25.1920.1055" timestamp="1611735237780" />
     <state x="-1176" y="433" key="#com.jetbrains.php.refactoring.move.namespace.PhpMoveNamespaceDialog#" timestamp="1611714039788">
       <screen x="-1920" y="25" width="1920" height="1055" />
     </state>
