@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="10f6411e-c9c7-4052-ac54-959f9d3a0368" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/phpreadocxmath.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/phpreadocxmath.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +43,7 @@
       <updated>1611713862563</updated>
       <workItem from="1611713863676" duration="367000" />
       <workItem from="1611714930146" duration="24000" />
-      <workItem from="1611714969992" duration="1958000" />
+      <workItem from="1611714969992" duration="2719000" />
     </task>
     <servers />
   </component>
