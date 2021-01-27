@@ -1,4 +1,4 @@
-# PHPReadDocx
+# phpreadocxmath
 
 #### 介绍
 #####  php 读取远程docx文件，支持数学公式
