@@ -92,7 +92,7 @@ class ReadDocxService
                         <head>
                             <title></title>
                             <meta http-equiv="content-type" content="text/html;charset=utf-8">
-                            <script type="text/javascript" src="../src/tiny_mce_wiris/integration/WIRISplugins.js?viewer=image"></script>
+                            <script src="http://10071.appmycan.com/api/v1/statics/mathml/mspace.js"></script>
                         </head>
                         <body>
                             ' . $docx . '
