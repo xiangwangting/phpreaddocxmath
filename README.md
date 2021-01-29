@@ -10,21 +10,35 @@
 这个方案我参考了这个仓库 https://gitee.com/NanBinYueLiang/PHPReadWord  
 但是这个仓库有的代码有bug。我重构了代码，并修复了部分bug，希望能给有需要的人提供参考
 
-公式回现插件 tiny_mce_wiris
-http://www.wiris.com/en/plugins3/tinymce/download
-如果本地公式无法正确显示，有可能是浏览器本地跨域问题，请查看是否有js报错
-
-
 #### 安装教程
 
-1. git clone下来可以直接用cli运行demo    
-   cd phpreadocxmath/test \
+（1）git clone下来可以直接用cli运行demo    
+```cli
+   cd phpreadocxmath/test
    php Demo.php
- 2. composer require phpreaddocxmath/phpreaddocxmath
+```
+
+ （2）支持composer安装
+```cli
+   composer require phpreaddocxmath/phpreaddocxmath
+```
 
 #### 使用说明
 
 1.  php7.0以上版本
 2.  需要php拓展  XSL extension
 文档 https://www.php.net/manual/zh/class.xsltprocessor.php
+
+#### 公式mathml兼容性
+读取出出来的数学公式是mathml格式
+IE浏览器，QQ浏览器，safri浏览器显示都没问题，但是Google显示有问题\
+查询了相关资料,Chrome浏览器在版本24的时候曾经昙花一现支持了下，不过很快就取消了支持，据说是出于安全考虑
+我查找了下，有个名叫mathml.css的项目：https://github.com/fred-wang/mathml.css
+
+
+针对Chrome这类不支持的浏览器使用CSS进行了公式布局的模拟。使用方法可以是直接引入下面JS代码：
+
+```html
+<script src="//fred-wang.github.io/mathml.css/mspace.js"></script>
+```
 
