@@ -153,7 +153,7 @@ class ReadDocxService
         if (!$class instanceof ImageDiyHandelInterface) {
             throw new \Exception($class_name . ' required ImageDiyHandelInterface');
         }
-        $this->img_handel_class = $class;
+        $this->img_handel_class = $class_name;
         return $this;
     }
 

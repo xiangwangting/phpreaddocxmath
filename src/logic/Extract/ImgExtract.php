@@ -92,8 +92,14 @@ class ImgExtract extends ExtractAbstruct
         if(!$this->image_handel_class){
             return $base64_data;
         }
+        if(!class_exists($this->image_handel_class)){
+            return $base64_data;
+        }
         /**@var ImageDiyHandelInterface $imageHandel*/
         $imageHandel = new $this->image_handel_class();
+        if(!$imageHandel instanceof ImageDiyHandelInterface){
+            return $base64_data;
+        }
         return $imageHandel->handel($base64_data,$image_patch);
     }
 }
