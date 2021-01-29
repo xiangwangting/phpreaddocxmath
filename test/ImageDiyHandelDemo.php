@@ -9,14 +9,13 @@ use phpreaddocxmath\src\ImageDiyHandelInterface;
 class ImageDiyHandelDemo implements ImageDiyHandelInterface
 {
     /**
-     * 自定义图片处理
-     * @param string $base64Img 图片数据流
-     * @return string 图片处理后对url
+     * @param string $base64Img
+     * @param string $image_patch
+     * @return string
      */
-    public function handel(string $base64Img): string
+    public function handel(string $base64Img, string $image_patch): string
     {
         // TODO: Implement handel() method.
-        //这里是自定义代码，可以把图片放在本地其他地方，也可以放在oss
         return $base64Img;
     }
 }

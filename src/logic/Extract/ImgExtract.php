@@ -59,7 +59,7 @@ class ImgExtract extends ExtractAbstruct
             $img_patch = $this->docxService->getDiyTmpPatch().'/' . $this->docxService->getTempPatchName() . '/media/word/' . $t[0];
             //这里获取到了图片到base64encode数据,需要上传到oss,并把本地地址替换成oss地址
             $base64    = $this->base64EncodeImage($img_patch);
-            $oss_url   = $this->saveOss($base64);
+            $oss_url   = $this->saveOss($base64,$img_patch);
             $this->xml = str_replace(
                 $v,
                 $this->pre_index . 'img  style="vertical-align: middle;" src="' . $oss_url . '" '. $this->end_index,
@@ -83,16 +83,17 @@ class ImgExtract extends ExtractAbstruct
 
     /**
      * 保存图片到oss,或者自己项目目录，并返回完整的图片url
-     * @param $base64_data 图片数据流
-     * @return string oss图片地址
+     * @param $base64_data
+     * @param $image_patch
+     * @return string
      */
-    private function saveOss($base64_data)
+    private function saveOss($base64_data,$image_patch)
     {
         if(!$this->image_handel_class){
             return $base64_data;
         }
         /**@var ImageDiyHandelInterface $imageHandel*/
         $imageHandel = new $this->image_handel_class();
-        return $imageHandel->handel($base64_data);
+        return $imageHandel->handel($base64_data,$image_patch);
     }
 }

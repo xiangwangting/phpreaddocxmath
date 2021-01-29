@@ -12,9 +12,10 @@ namespace phpreaddocxmath\src;
 interface ImageDiyHandelInterface
 {
     /**
-     * 自定义图片处理
-     * @param string $base64Img 图片base64数据流
-     * @return string 处理后的图片url,会用于替换图片src显示
+     * 自定义临时图片处理
+     * @param string $base64Img 图片base64数据
+     * @param string $image_patch 图片路径
+     * @return string
      */
-    public function handel(string $base64Img) : string;
+    public function handel(string $base64Img,string $image_patch) : string;
 }
