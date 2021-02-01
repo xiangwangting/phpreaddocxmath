@@ -46,7 +46,7 @@ convent MATHML to MathJax，MathJax	 https://www.mathjax.org/
 我发先这个东西可以完美解决因浏览器问题，导致的数学公式显示问题
 
 ```html
-<script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 ```
 
 
