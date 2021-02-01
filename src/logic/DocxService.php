@@ -92,7 +92,7 @@ class DocxService
         $temp_file             = file_get_contents($file_url);
         $this->temp_patch_name = md5($temp_file);
         if (!is_dir($this->diy_tmp_patch.'/' . $this->temp_patch_name)) {
-            mkdir($this->diy_tmp_patch.'/' . $this->temp_patch_name);//创建临时文件夹
+            mkdir($this->diy_tmp_patch.'/' . $this->temp_patch_name,0777,true);//创建临时文件夹
         }
         $tmp_file_name = $this->diy_tmp_patch.'/' . $this->temp_patch_name . '/' . $this->temp_patch_name . '.docx';
         $myfile        = fopen($tmp_file_name, 'w');

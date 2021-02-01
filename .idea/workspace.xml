@@ -21,8 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="10f6411e-c9c7-4052-ac54-959f9d3a0368" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ReadDocxService.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/ReadDocxService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logic/Extract/ImgExtract.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/logic/Extract/ImgExtract.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/logic/DocxService.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/logic/DocxService.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +63,8 @@
       <workItem from="1611714930146" duration="24000" />
       <workItem from="1611714969992" duration="2719000" />
       <workItem from="1611822564442" duration="481000" />
-      <workItem from="1611905125764" duration="1690000" />
+      <workItem from="1611905125764" duration="2101000" />
+      <workItem from="1612150115676" duration="27000" />
     </task>
     <servers />
   </component>
@@ -81,6 +81,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="-1147" y="272" key="#com.intellij.ide.util.MemberChooser" timestamp="1611906044209">
