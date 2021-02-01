@@ -92,7 +92,7 @@ class ReadDocxService
                         <head>
                             <title></title>
                             <meta http-equiv="content-type" content="text/html;charset=utf-8">
-                            <script src="http://10071.appmycan.com/api/v1/statics/mathml/mspace.js"></script>
+                            <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
                         </head>
                         <body>
                             ' . $docx . '

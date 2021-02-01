@@ -20,7 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="10f6411e-c9c7-4052-ac54-959f9d3a0368" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ReadDocxService.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/ReadDocxService.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +66,8 @@
       <workItem from="1611905125764" duration="2101000" />
       <workItem from="1612150115676" duration="116000" />
       <workItem from="1612170222300" duration="1088000" />
-      <workItem from="1612172734416" duration="135000" />
+      <workItem from="1612172734416" duration="161000" />
+      <workItem from="1612173660982" duration="11000" />
     </task>
     <servers />
   </component>
