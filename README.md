@@ -41,3 +41,12 @@ IE浏览器，QQ浏览器，safri浏览器显示都没问题，但是Google显�
 <script src="//fred-wang.github.io/mathml.css/mspace.js"></script>
 ```
 
+#### 2021-02-01公式mathml兼容性
+convent MATHML to MathJax，MathJax	 https://www.mathjax.org/
+我发先这个东西可以完美解决因浏览器问题，导致的数学公式显示问题
+
+```html
+<script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+```
+
+
