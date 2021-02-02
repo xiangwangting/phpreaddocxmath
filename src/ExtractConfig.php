@@ -7,6 +7,7 @@ use phpreaddocxmath\src\logic\Extract\ImgExtract;
 use phpreaddocxmath\src\logic\Extract\MathExtract;
 use phpreaddocxmath\src\logic\Extract\SubExtract;
 use phpreaddocxmath\src\logic\Extract\SupExtract;
+use phpreaddocxmath\src\logic\Extract\TableExtract;
 
 /**
  * Class ExtractConfig
@@ -22,5 +23,6 @@ class ExtractConfig
         SupExtract::class,
         SubExtract::class,
         ImgExtract::class,
+        TableExtract::class,
     ];
 }
