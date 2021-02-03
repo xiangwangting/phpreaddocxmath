@@ -80,6 +80,9 @@ class FontExtract extends ExtractAbstruct
         $string_arr = explode($this->end_index,$string_before);
         $string_after = '';
         foreach ($string_arr as $string){
+            if(!$string){
+                continue;
+            }
             $string .= $this->end_index;
             $style = "style='";
             if(strstr($string,$this->css_weight_bold)){
@@ -100,6 +103,7 @@ class FontExtract extends ExtractAbstruct
             $this->pre_index and $string = str_replace($this->pre_index, '<span '.$style.' >', $string);
             $this->end_index and $string = str_replace($this->end_index, '</span>', $string);
             $string_after .= $string;
+
         }
         return $string_after;
     }
