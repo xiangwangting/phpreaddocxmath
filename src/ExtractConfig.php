@@ -3,6 +3,7 @@
 
 namespace phpreaddocxmath\src;
 
+use phpreaddocxmath\src\logic\Extract\FontExtract;
 use phpreaddocxmath\src\logic\Extract\ImgExtract;
 use phpreaddocxmath\src\logic\Extract\MathExtract;
 use phpreaddocxmath\src\logic\Extract\SubExtract;
@@ -19,6 +20,7 @@ class ExtractConfig
      * 转换配置
      */
     const CONFIG = [
+        FontExtract::class,
         MathExtract::class,
         SupExtract::class,
         SubExtract::class,

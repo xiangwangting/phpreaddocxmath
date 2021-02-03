@@ -13,8 +13,6 @@ use phpreaddocxmath\src\logic\ExtractAbstruct;
 class TableExtract extends ExtractAbstruct
 {
     /**
-     * <w:vertAlign w:val="superscript"/></w:rPr><w:t>
-     * </w:t>
      * @var string
      */
     protected $grep = '/<w:tbl.*?:tbl>/';
@@ -22,11 +20,11 @@ class TableExtract extends ExtractAbstruct
     /**
      * @var string
      */
-    protected $tr_grep = '/<w:tr.*?:tr>/';
+    protected $tr_grep = '/<w:tr.*?w:tr>/';
     /**
      * @var string
      */
-    protected $td_grep = '/<w:tc.*?:tc>/';
+    protected $td_grep = '/<w:tc>.*?w:tc>/';
 
     /**
      * @var string

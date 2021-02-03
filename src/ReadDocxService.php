@@ -22,12 +22,6 @@ class ReadDocxService
     private $file_url;
 
     /**
-     * 临时文件存放路径
-     * @var string
-     */
-    protected $tmp_patch = '';
-
-    /**
      * @var DocxService;
      */
     private $docxService;
