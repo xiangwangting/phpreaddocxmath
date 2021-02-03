@@ -19,14 +19,15 @@ class SupExtract extends ExtractAbstruct
      */
     protected $grep = '/<w:vertAlign w:val="superscript".*?w:r>/';
 
+
     /**
      * @var string
      */
-    protected $pre_index = '[上标前]';
+    protected $pre_index = '[上标]';
     /**
      * @var string
      */
-    protected $end_index = '[上标后]';
+    protected $end_index = '[/上标]';
 
     /**
      * @var string
@@ -37,4 +38,23 @@ class SupExtract extends ExtractAbstruct
      * @var string
      */
     protected $end_tag = '</sup>';
+
+    /**
+     * @return mixed
+     */
+    public function handel()
+    {
+        if(!$this->grep){
+            return $this->xml;
+        }
+        preg_match_all($this->grep, $this->xml, $arr);
+        foreach ($arr[0] as $v) {
+            $text = trim(strip_tags($v));
+            $string_after = str_replace('<w:t>'.$text.'</w:t>',$this->pre_index.$text.$this->end_index,$v);
+            if($text){
+                $this->xml     = str_replace($v, $string_after, $this->xml);
+            }
+        }
+        return $this->xml;
+    }
 }

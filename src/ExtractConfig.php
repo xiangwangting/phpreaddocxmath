@@ -20,10 +20,10 @@ class ExtractConfig
      * 转换配置
      */
     const CONFIG = [
-        FontExtract::class,
-        MathExtract::class,
         SupExtract::class,
         SubExtract::class,
+        FontExtract::class,
+        MathExtract::class,
         ImgExtract::class,
         TableExtract::class,
     ];
