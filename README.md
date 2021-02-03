@@ -31,19 +31,11 @@
 读取出出来的数学公式是mathml格式
 IE浏览器，QQ浏览器，safri浏览器显示都没问题，但是Google显示有问题\
 查询了相关资料,Chrome浏览器在版本24的时候曾经昙花一现支持了下，不过很快就取消了支持，据说是出于安全考虑
-我查找了下，有个名叫mathml.css的项目：https://github.com/fred-wang/mathml.css
-但是，个别样式总感觉怪怪到，如果使用，还需要根据实际情况针对优化显示效果
 
-
-针对Chrome这类不支持的浏览器使用CSS进行了公式布局的模拟。使用方法可以是直接引入下面JS代码：
-
-```html
-<script src="//fred-wang.github.io/mathml.css/mspace.js"></script>
-```
-
-#### 2021-02-01公式mathml兼容性
-convent MATHML to MathJax，MathJax	 https://www.mathjax.org/
 我发先这个东西可以完美解决因浏览器问题，导致的数学公式显示问题
+convent MATHML to MathJax，MathJax	 https://www.mathjax.org/
+
+js渲染的公式，如果是vue的页面，必须在页面加载完成后，再引入js才有效果。
 
 ```html
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
