@@ -21,11 +21,11 @@ class SubExtract extends ExtractAbstruct
     /**
      * @var string
      */
-    protected $pre_index = '[下标]';
+    protected $pre_index = '[subtag]';
     /**
      * @var string
      */
-    protected $end_index = '[/下标]';
+    protected $end_index = '[/subtag]';
 
     /**
      * @var string

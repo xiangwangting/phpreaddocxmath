@@ -21,9 +21,13 @@
   <component name="ChangeListManager">
     <list default="true" id="10f6411e-c9c7-4052-ac54-959f9d3a0368" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/logic/Extract/FontExtract.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/logic/Extract/FontExtract.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/logic/Extract/ImgExtract.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/logic/Extract/ImgExtract.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logic/ExtractAbstruct.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/logic/ExtractAbstruct.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/logic/Extract/SubExtract.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/logic/Extract/SubExtract.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/logic/Extract/SupExtract.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/logic/Extract/SupExtract.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/logic/Extract/TableExtract.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/logic/Extract/TableExtract.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Demo.php" beforeDir="false" afterPath="$PROJECT_DIR$/test/Demo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/read_docx.html" beforeDir="false" afterPath="$PROJECT_DIR$/test/read_docx.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +86,8 @@
       <workItem from="1612340722281" duration="1880000" />
       <workItem from="1612345338876" duration="244000" />
       <workItem from="1612346529248" duration="249000" />
-      <workItem from="1612410746921" duration="90000" />
+      <workItem from="1612410746921" duration="191000" />
+      <workItem from="1612421234662" duration="3254000" />
     </task>
     <servers />
   </component>
@@ -102,10 +107,11 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="-1147" y="272" key="#com.intellij.ide.util.MemberChooser" timestamp="1612323878986">
-      <screen x="-1920" y="25" width="1920" height="1055" />
+    <state x="580" y="230" key="#com.intellij.ide.util.MemberChooser" timestamp="1612424397818">
+      <screen x="0" y="25" width="1440" height="875" />
     </state>
     <state x="-1147" y="272" key="#com.intellij.ide.util.MemberChooser/-1920.25.1920.1055/0.25.1440.875@-1920.25.1920.1055" timestamp="1612323878986" />
+    <state x="580" y="230" key="#com.intellij.ide.util.MemberChooser/0.25.1440.875@0.25.1440.875" timestamp="1612424397818" />
     <state x="-1363" y="25" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1611735237780">
       <screen x="-1920" y="25" width="1920" height="1055" />
     </state>

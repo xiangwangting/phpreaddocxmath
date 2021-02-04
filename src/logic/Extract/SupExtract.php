@@ -23,11 +23,11 @@ class SupExtract extends ExtractAbstruct
     /**
      * @var string
      */
-    protected $pre_index = '[上标]';
+    protected $pre_index = '[suptag]';
     /**
      * @var string
      */
-    protected $end_index = '[/上标]';
+    protected $end_index = '[/suptag]';
 
     /**
      * @var string

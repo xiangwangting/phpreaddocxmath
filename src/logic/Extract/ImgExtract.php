@@ -22,11 +22,11 @@ class ImgExtract extends ExtractAbstruct
     /**
      * @var string
      */
-    protected $pre_index = '[图片前]';
+    protected $pre_index = '[imagetag]';
     /**
      * @var string
      */
-    protected $end_index = '[图片后]';
+    protected $end_index = '[/imagetag]';
 
     /**
      * @var string

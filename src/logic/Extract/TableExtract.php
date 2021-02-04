@@ -29,11 +29,11 @@ class TableExtract extends ExtractAbstruct
     /**
      * @var string
      */
-    private $table_pre = '[表格]';
+    private $table_pre = '[tabletag]';
     /**
      * @var string
      */
-    private $table_end = '[/表格]';
+    private $table_end = '[/tabletag]';
     /**
      * @var string
      */
