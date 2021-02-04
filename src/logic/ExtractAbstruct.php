@@ -79,6 +79,12 @@ abstract class ExtractAbstruct
      * @return string|string[]
      */
     public function handelOver($string){
+        if(!$string){
+            return $string;
+        }
+        if(!$this->pre_index && !$this->end_index){
+            return $string;
+        }
         if(strstr($string,$this->pre_index) === false &&  strstr($string,$this->end_tag) === false){
             return $string;
         }
