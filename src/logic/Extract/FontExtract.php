@@ -6,7 +6,6 @@ namespace phpreaddocxmath\src\logic\Extract;
 
 use phpreaddocxmath\src\logic\ExtractAbstruct;
 
-
 /**
  * 字体样式转换
  * Class FontExtract
@@ -100,8 +99,8 @@ class FontExtract extends ExtractAbstruct
             if (!$string) {
                 continue;
             }
-            $string .= $this->end_index;
-            $style  = "style='";
+            strstr($string, $this->pre_index) !== false and $string .= $this->end_index;
+            $style = "style='";
             if (strstr($string, $this->css_weight_bold)) {
                 $string = str_replace($this->css_weight_bold, '', $string);
                 $style  .= 'font-weight:bold;';
