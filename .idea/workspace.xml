@@ -50,7 +50,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/logic/Extract" />
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
   </component>
   <component name="RecentsManager">
@@ -85,7 +85,11 @@
       <workItem from="1612410746921" duration="191000" />
       <workItem from="1612421234662" duration="3254000" />
       <workItem from="1614912123985" duration="1139000" />
-      <workItem from="1614913278729" duration="805000" />
+      <workItem from="1614913278729" duration="914000" />
+      <workItem from="1614914542704" duration="369000" />
+      <workItem from="1614916056887" duration="335000" />
+      <workItem from="1614928136657" duration="218000" />
+      <workItem from="1616642870043" duration="12000" />
     </task>
     <servers />
   </component>

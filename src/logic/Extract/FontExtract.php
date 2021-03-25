@@ -6,6 +6,7 @@ namespace phpreaddocxmath\src\logic\Extract;
 
 use phpreaddocxmath\src\logic\ExtractAbstruct;
 
+
 /**
  * 字体样式转换
  * Class FontExtract
@@ -77,7 +78,7 @@ class FontExtract extends ExtractAbstruct
             $css       .= $this->matchLineThrouth($v);
             $css       .= $this->matchFontColor($v);
             $css       .= $this->matchBgColor($v);
-            $text      = trim(strip_tags($v));
+            $text      = strip_tags($v);
             $this->xml = str_replace(
                 $v,
                 $this->pre_index . $this->css_pre . $css . $this->css_end . $text . $this->end_index,
@@ -105,10 +106,6 @@ class FontExtract extends ExtractAbstruct
                 $string = str_replace($this->css_weight_bold, '', $string);
                 $style  .= 'font-weight:bold;';
             }
-            if (strstr($string, $this->css_underline)) {
-                $string = str_replace($this->css_underline, '', $string);
-                $style  .= 'text-decoration:underline;';
-            }
             if (strstr($string, $this->css_lineThourgh)) {
                 $string = str_replace($this->css_lineThourgh, '', $string);
                 $style  .= 'text-decoration:line-through;';
@@ -117,14 +114,18 @@ class FontExtract extends ExtractAbstruct
                 $grep = '/' . $this->css_font_color . '.*?;/';
                 preg_match_all($grep, $string, $text_arr);
                 foreach ($text_arr[0] as $tmp) {
-                    $color  = explode(':', $tmp);
-                    $color  = $color[1];
+                    $color = explode(':', $tmp);
+                    if (isset($color[1])) {
+                        $color = $color[1];
+                    } else {
+                        $color = '';
+                    }
                     $color  = str_replace(';', '', $color);
                     $style  .= 'color:' . $color . ';';
                     $string = str_replace($this->css_font_color . ':' . $color . ';', '', $string);
                 }
                 $string = str_replace($this->css_font_color, '', $string);
-                $style  .= 'color';
+                $style  .= 'color;';
             }
             if (strstr($string, $this->css_bg_color)) {
                 $grep = '/' . $this->css_bg_color . '.*?;/';
@@ -137,13 +138,34 @@ class FontExtract extends ExtractAbstruct
                     $string = str_replace($this->css_bg_color . ':' . $color . ';', '', $string);
                 }
                 $string = str_replace($this->css_font_color, '', $string);
-                $style  .= 'color';
+                $style  .= 'color;';
+            }
+            $has_underline = false;
+            if (strstr($string, $this->css_underline)) {
+                $string = str_replace($this->css_underline, '', $string);
+                $style  .= 'text-decoration:underline;';
+                $has_underline = true;
             }
             $string = str_replace($this->css_pre, '', $string);
             $string = str_replace($this->css_end, '', $string);
             $style  .= "'";
             $this->pre_index and $string = str_replace($this->pre_index, '<span ' . $style . ' >', $string);
             $this->end_index and $string = str_replace($this->end_index, '</span>', $string);
+            if($has_underline){
+                $tmp = strip_tags($string);
+                if ($tmp && $string != 'mosoteach_math_xml0') {
+                    $tmp_after = '';
+                    for ($i = 0; $i < mb_strlen($tmp); $i++) {
+                        $tmp_search = mb_substr($tmp, $i, 1);
+                        if (!$tmp_search || $tmp_search == ' ') {
+                            $tmp_after .= '&nbsp;';continue;
+                        } else {
+                            $tmp_after .= $tmp_search;
+                        }
+                    }
+                    $string = str_replace($tmp, $tmp_after, $string);
+                }
+            }
             $string_after .= $string;
         }
         return $string_after;
